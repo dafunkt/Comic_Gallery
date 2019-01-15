@@ -10,13 +10,7 @@ namespace Comic_Gallery.Controllers
     {
         public ActionResult Detail()
         {
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Tuesday)
-            {
-                return Redirect("/");
-                return new RedirectResult("/");
-            }
-
-            return Content("Hello frmo th comic book controller");
+            return View();
            
 
            
